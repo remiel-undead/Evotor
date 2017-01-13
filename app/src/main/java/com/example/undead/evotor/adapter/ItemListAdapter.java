@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.example.undead.evotor.R;
 import com.example.undead.evotor.model.Item;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -56,7 +57,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
 
         void bindItem(final Item item) {
             mNameTextView.setText(item.getName());
-            // TODO set img
+            Picasso.with(mView.getContext()).load(item.getImage()).fit().placeholder(R.mipmap.ic_launcher).into(mImageView);
         }
     }
 }
