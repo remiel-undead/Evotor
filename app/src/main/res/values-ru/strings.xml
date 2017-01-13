@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Эвотор</string>
+
+    <string name="sorry_empty">К сожалению, здесь пока пусто.</string>
+
+    <string name="section_1">Группа 1</string>
+    <string name="section_2">Группа 2</string>
+    <string name="section_3">Группа 3</string>
+
+</resources>
