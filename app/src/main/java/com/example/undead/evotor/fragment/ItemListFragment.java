@@ -50,8 +50,8 @@ public class ItemListFragment extends BaseFragment implements ItemListView {
     }
 
     @Override
-    public void onDestroy() {
-        super.onDestroy();
+    public void onPause() {
+        super.onPause();
         mItemListPresenter.unsubscribe();
     }
 
